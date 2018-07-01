@@ -50,7 +50,25 @@
 <link rel="stylesheet" href="./index_files/jquery.fancybox.min.css">
 <script src="./index_files/jquery.fancybox.min.js.Без названия"></script>
  
-   
+ <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '258761237588681',
+      xfbml      : true,
+      version    : 'v3.0'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>  
 
 <!-- SAPE RTB JS -->
 <script async="async" src="./index_files/27736.js.Без названия" type="text/javascript">
